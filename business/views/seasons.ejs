@@ -1,0 +1,10 @@
+<% include partials/header.ejs %>
+<h1> This is the seasons page!</h1>
+<% seasons.forEach(function(season){ %>
+<div>
+   <h4><%=season.name %></h4>
+ 
+   <img src="<%= season.image %>">
+</div>
+<% }); %>
+<% include partials/footer.ejs %>
